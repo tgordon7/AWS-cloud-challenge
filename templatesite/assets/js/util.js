@@ -583,5 +583,20 @@
 			});
 
 	};
-
+<script>
+  $(document).ready(function () {
+    $.ajax({
+      url: 'https://iyz77t3j5zn6iyraffiyjbyzmy0liexz.lambda-url.us-east-1.on.aws/',
+      type: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        $('#counter').text('Number: ' + data);
+      },
+      error: function (error) {
+        console.log(error);
+        $('#counter').text('Error: Unable to fetch number');
+      },
+    })
+  })
+</script>
 })(jQuery);
