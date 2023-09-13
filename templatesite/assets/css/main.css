@@ -1,4 +1,4 @@
-@import url("https://s3.amazonaws.com/resume-bucket-t.gordon/assets/css/fontawesome-all.min.css");
+@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
@@ -1765,7 +1765,7 @@ input, select, textarea {
 	}
 
 	header h2 + p {
-		font-size: 1.10em;
+		font-size: 1.25em;
 		margin-top: -0.5em;
 		line-height: 1.5em;
 	}
