@@ -155,27 +155,5 @@
 
 			}
 		});
-<<<<<<< HEAD
-		const counter = document.querySelector(".counter-number");
-		async function updateCounter() {
-			let response = await fetch("https://iyz77t3j5zn6iyraffiyjbyzmy0liexz.lambda-url.us-east-1.on.aws/");
-			let data = await response.json();
-			counter.innerHTML = ` Views: ${data}`;
-		
-		}
-		
-		updateCounter();
-})(jQuery);
-=======
 
 })(jQuery);
-const counter = document.querySelector(".counter-number");
-async function updateCounter() {
-	let response = await fetch("https://iyz77t3j5zn6iyraffiyjbyzmy0liexz.lambda-url.us-east-1.on.aws/");
-	let date = await response.json();
-	counter.innerHTML = ` Views: ${data}`;
-
-}
-
-updateCounter();
->>>>>>> 8e59ec52fecc024745204e4d3369061dc65cb152
