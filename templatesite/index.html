@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://s3.amazonaws.com/resume-bucket-t.gordon/assets/css/main.css" />
-		<script src="api.call.js"></script>
+		<script src= "api.calls.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -29,24 +29,8 @@
 						<li><a href="#four">Projects</a></li>
 						<li><a href="#five">Contact</a></li>
 						<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-						<script src="api.call.js"></script>
-						<script>
-						const api_url =
-						  "https://wfq54w71jc.execute-api.us-east-1.amazonaws.com/dev";
-						fetch(api_url)
-						  .then((response) => {
-							return response.json();
-						  })
-						  .then((data) => {
-							// Update the page with the visitor count from DynamoDB
-							document.getElementById("read-more").innerHTML = data;
-						  })
-						  .catch(function (error) {
-							// Handle any errors that occur during the request
-							console.log(error);
-						  });
-						  </script>
-						  <p>Views: <const class = "api_url"></const></p>
+						<script src="api.call.js:updateCounter"></script>
+						<div id="counter" class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't read views</div>
 					</ul>
 				</nav>
 			</section>
